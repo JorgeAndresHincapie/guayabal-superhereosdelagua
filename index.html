@@ -88,6 +88,17 @@ p.intro-txt{color:var(--tinta-suave);max-width:44rem;line-height:1.6;font-size:.
 .mutual-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:2rem;}
 @media(max-width:760px){.mutual-grid{grid-template-columns:1fr;}}
 .mutual-card{background:var(--blanco);border:1.5px solid var(--papel-mas-osc);border-radius:4px;padding:1.5rem;}
+
+/* ---- estratos del bosque de galería ---- */
+.estratos-lista{display:flex;flex-direction:column;gap:1.4rem;margin-top:1.8rem;}
+.estrato-card{display:flex;gap:1.2rem;background:var(--blanco);border:1.5px solid var(--papel-mas-osc);border-radius:6px;padding:1.3rem;box-shadow:0 6px 18px rgba(34,51,31,.08);}
+.estrato-num{flex-shrink:0;width:38px;height:38px;border-radius:50%;background:var(--musgo);color:white;font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;display:flex;align-items:center;justify-content:center;}
+.estrato-txt{flex:1.4;min-width:220px;}
+.estrato-txt h3{font-family:'Fraunces',serif;color:var(--tinta);font-size:1.15rem;margin-bottom:.4rem;}
+.estrato-desc{font-size:.88rem;color:var(--tinta-suave);line-height:1.6;}
+.estrato-fotos{flex:1;display:flex;flex-wrap:wrap;gap:.5rem;align-content:flex-start;min-width:180px;}
+.estrato-fotos img{width:calc(50% - .25rem);height:90px;object-fit:cover;border-radius:4px;box-shadow:0 3px 8px rgba(0,0,0,.12);}
+@media(max-width:700px){.estrato-card{flex-direction:column;}.estrato-fotos img{width:calc(33% - .34rem);height:75px;}}
 .mutual-card h3{font-size:1.2rem;color:var(--musgo);margin-bottom:.7rem;}
 .mutual-card ul{margin:0;padding-left:1.1rem;color:var(--tinta-suave);font-size:.92rem;line-height:1.65;}
 .mutual-card li{margin-bottom:.3rem;}
@@ -228,6 +239,7 @@ footer .sello-final{font-family:'Caveat',cursive;font-size:1.3rem;color:#D8C89C;
 <a href="#mapa">El recorrido</a>
 <a href="#voces">Voz de la vereda</a>
 <a href="#maqueta">La maqueta</a>
+<a href="#estratos">Los 5 pisos del bosque</a>
 <a href="#aves">Las aves</a>
 <a href="#fauna">Otros habitantes</a>
 <a href="#cuaderno">Cuaderno de campo</a>
@@ -457,6 +469,85 @@ footer .sello-final{font-family:'Caveat',cursive;font-size:1.3rem;color:#D8C89C;
 </ul>
 </div>
 </div>
+</div>
+</section>
+
+<div class="divisor"></div>
+
+<section id="estratos">
+<div class="wrap">
+<div class="kicker"><span class="num">Cuaderno, pág. 3</span><span class="linea"></span></div>
+<h2 class="tit">Los 5 pisos del bosque de galería</h2>
+<p class="intro-txt">Un bosque de galería (o de ribera) es la franja de árboles y arbustos que crece pegada a las orillas de la quebrada. Se llama "galería" porque las copas se juntan arriba y forman un túnel verde sobre el agua. Cada piso —desde el suelo hasta las copas más altas— tiene su propia humedad, su propia luz, y sus propias aves guardianas.</p>
+
+<div class="estratos-lista">
+
+<div class="estrato-card">
+<div class="estrato-num">1</div>
+<div class="estrato-txt">
+<h3>El cauce y la ronda hídrica</h3>
+<p class="estrato-desc">Por donde corre el agua; la orilla recibe humedad todo el tiempo. Aquí viven la <b>garza bueyera</b>, el <b>gallinazo</b> y las mirlas, que remueven el lodo buscando insectos y ayudan a controlar plagas y dispersar semillas.</p>
+</div>
+<div class="estrato-fotos">
+<img src="assets/img/cauce-1.jpg" alt="Cauce de la quebrada">
+<img src="assets/img/garza-bueyera.jpg" alt="Garza bueyera">
+<img src="assets/img/gallinazo-vuelo.jpg" alt="Gallinazo en vuelo">
+</div>
+</div>
+
+<div class="estrato-card">
+<div class="estrato-num">2</div>
+<div class="estrato-txt">
+<h3>Estrato herbáceo o rastrojera</h3>
+<p class="estrato-desc">Plantas bajas, menores a 1 metro, sin tallo leñoso: pastos, helechos, musgos. Aquí el <b>turpial dorsidorado</b> y las tangaras buscan insectos y frutos, llevando semillas del bosque maduro hacia zonas de rastrojo y ayudando a que la vegetación se recupere.</p>
+</div>
+<div class="estrato-fotos">
+<img src="assets/img/herbaceo-1.jpg" alt="Estrato herbáceo">
+<img src="assets/img/turpial-dorsidorado.jpg" alt="Turpial dorsidorado">
+</div>
+</div>
+
+<div class="estrato-card">
+<div class="estrato-num">3</div>
+<div class="estrato-txt">
+<h3>El sotobosque</h3>
+<p class="estrato-desc">Arbustos de 1 a 12 metros, como guamos, en penumbra y suelo húmedo. Refugio de mamíferos pequeños e insectos. El <b>carpintero habado</b> y la <b>tangara dorada</b> inspeccionan troncos oscuros buscando artrópodos y dispersan semillas de arbustos de orilla.</p>
+</div>
+<div class="estrato-fotos">
+<img src="assets/img/sotobosque-1.jpg" alt="Sotobosque">
+<img src="assets/img/carpintero-habado.jpg" alt="Carpintero habado">
+<img src="assets/img/tangara-dorada.jpg" alt="Tangara dorada">
+</div>
+</div>
+
+<div class="estrato-card">
+<div class="estrato-num">4</div>
+<div class="estrato-txt">
+<h3>El dosel o techo verde</h3>
+<p class="estrato-desc">Ramas y hojas de árboles grandes (15-45 m) como yarumos y guaduales, que tapan el sol y forman el túnel verde. Aquí viven más especies que en ningún otro piso: el <b>azulejo</b>, la <b>eufonia ventriamarilla</b> y el <b>bienteveo</b> cazan insectos al vuelo y reducen el golpe directo de la lluvia sobre el suelo.</p>
+</div>
+<div class="estrato-fotos">
+<img src="assets/img/dosel-1.jpg" alt="Dosel del bosque">
+<img src="assets/img/azulejo.jpg" alt="Azulejo">
+<img src="assets/img/eufonia-ventriamarilla.jpg" alt="Eufonia ventriamarilla">
+</div>
+</div>
+
+<div class="estrato-card">
+<div class="estrato-num">5</div>
+<div class="estrato-txt">
+<h3>El suelo forestal</h3>
+<p class="estrato-desc">Hojarasca, tierra y raíces que agarran el suelo. Llega menos del 2% de la luz solar. Aquí la <b>tortolita rojiza</b> y la <b>paloma montaraz</b> rebuscan lombrices e insectos entre la hojarasca, ayudando a que el agua de lluvia se filtre hacia los nacimientos.</p>
+</div>
+<div class="estrato-fotos">
+<img src="assets/img/suelo-forestal-1.jpg" alt="Suelo forestal con hojarasca">
+<img src="assets/img/tortolita-rojiza.jpg" alt="Tortolita rojiza">
+<img src="assets/img/paloma-montaraz.jpg" alt="Paloma montaraz">
+</div>
+</div>
+
+</div>
+<p class="intro-txt" style="margin-top:1.6rem;">Las aves protegen las quebradas manteniendo la salud de toda la cuenca: el dosel frena el impacto de la lluvia, el sotobosque y la rastrojera retienen el talud con sus raíces, y el suelo forestal absorbe el agua. Al dispersar semillas y controlar insectos, las aves aseguran la densidad de esta vegetación que alimenta y filtra el caudal.</p>
 </div>
 </section>
 
